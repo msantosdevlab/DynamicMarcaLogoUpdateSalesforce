@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+        <header class="slds-modal__header">
+            <h2 class="slds-modal__title slds-text-align_center">
+                Page Refresh
+            </h2>
+        </header>
+        <div class="container  slds-p-around_medium">
+            <p>Refresh the page so that all changes are reflected.</p>
+            <br>
+            <p>Ensure all changes are saved properly before refreshing the page.</p>
+        </div>
+
+        <div slot="footer" class="slds-text-align_center">
+            <lightning-button label="Page Refresh" variant="brand" onclick={handleRefresh}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

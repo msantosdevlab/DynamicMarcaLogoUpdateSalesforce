@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCenter Login</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background: url(image/bg_petcenter.png) no-repeat bottom;
+        }
+        
+        .typing-effect {
+            font-size: 2em;
+            margin-top: -350px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ff6600;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 0.07em solid #ff6600;
+            width: 41ch;
+            animation: typing 4s steps(22) infinite, blink-caret 0.5s step-end infinite;
+        }
+        
+        
+        /* Animations */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 41ch;
+            }
+        }
+        
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #ff6600;
+            }
+        }
+        
+        @keyframes paw-animate {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(20px); }
+            100% { transform: translateX(0); }
+        }
+        
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .typing-effect {
+                font-size: 1.5em;
+                width: 18ch;
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="typing-effect">Tudo o que o seu Pet precisa, num só lugar.</p>
+    </div>
+</body>
+</html>
